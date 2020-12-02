@@ -1,0 +1,28 @@
+nav { 
+    .nav-item{ 
+        margin: 0px 0px 0px 50px ;
+        display: inline;
+        
+
+        a { 
+            cursor: pointer; 
+            text-decoration: none; 
+            color: black;
+            font-family: Arial;
+            font-size: 26px;
+            &:hover { color: lightgrey; }
+        }
+    }
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+}
+
+.logo {
+    padding: 10px 0px 10px 20px;
+}
