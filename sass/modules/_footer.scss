@@ -1,0 +1,19 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    
+    @include addPadding(10px 0);
+
+    color: white;
+}
+
+.footerDiv {
+    height: 10px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}

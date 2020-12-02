@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Teaching Team and a Bit About Them">
+    <title>Mini App</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <main id="app">
+        <nav class="main-nav">
+            <img src="images/mini_logo.png" alt="Mini Logo" class="logo">
+            <ul>
+                <li class="nav-item"><a href="#" >LINEUPS</a></li>
+                <li class="nav-item"><a href="#">FEATURED</a></li>
+                <li class="nav-item"><a href="#">USED</a></li>
+                <li class="nav-item"><a href="#">SHOP</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Discover:</h2>
+        </section>
+
+        <!-- add a users section here -->
+        <section class="user-section">
+            <h1 class="hidden"></h1>
+            <h2 class="user-name"></h2>
+            <p class="user-lineup"></p>
+            <p class="user-description"></p>
+        </section>
+        <!-- end users section -->
+    </main>
+
+    <section class="footer">
+        <div class="footerDiv"></div>
+        <p>this is a simple footer</p>
+    </section>
+
+    <!-- template files here (these don't render) -->
+    <template id="user-template">
+        <div class="user">
+            <h1 class="hidden"></h1>
+            <img src="temp.jpg" alt="user image">
+            <!-- <h2 class="user-name"></h2>
+            <p class="user-nickname"></p>
+            <p class="user-role"></p> -->
+        </div>
+    </template>
+    <!-- end templates -->
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

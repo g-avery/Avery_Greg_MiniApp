@@ -1,0 +1,114 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: black;
+  }
+}
+
+/* css comments work too */
+body {
+  font: "arial", "helvetica", sans-serif;
+  font-size: 16px;
+  background-color: black;
+  margin: 0 0 50px 0;
+  border: 0;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.box2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+nav .nav-item {
+  margin: 0px 0px 0px 50px;
+  display: inline;
+}
+
+nav .nav-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+  font-size: 26px;
+}
+
+nav .nav-item a:hover {
+  color: lightgrey;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  height: 120px;
+  width: 100%;
+}
+
+.logo {
+  padding: 10px 0px 10px 20px;
+}
+
+.user-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user {
+  padding: 10px;
+}
+
+.user .user-name, .user .user-nickname, .user .user-role {
+  margin: 0;
+}
+
+.user img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .user {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .user img {
+    max-width: 150px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+.footerDiv {
+  height: 10px;
+  width: 600px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=master.css.map */
