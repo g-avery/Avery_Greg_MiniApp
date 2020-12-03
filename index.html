@@ -7,6 +7,7 @@
     <meta name="description" content="Our Teaching Team and a Bit About Them">
     <title>Mini App</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
@@ -21,23 +22,39 @@
             </ul>
         </nav>
 
-        <section>
-            <h2>Discover:</h2>
+        <section class="heroSection">
+            <img src="images/heroImg.jpg" alt="Hero Image" class="heroImg">
+            <h2>Discover your new ride</h2>
         </section>
 
         <!-- add a users section here -->
         <section class="user-section">
+            <!-- name are clickable and show up in console, but the other data for the cars are not showing (no errors in console-->
+         
             <h1 class="hidden"></h1>
             <h2 class="user-name"></h2>
             <p class="user-lineup"></p>
             <p class="user-description"></p>
+            <h1 @click="click3Door" class="titleCar">{{ lineup1 }}</h1>
+            <h1 @click="clickClubman" class="titleCar">{{ lineup2 }}</h1>
+            <h1 @click="clickConvertible" class="titleCar">{{ lineup3 }}</h1>
+            <h1 @click="clickCountryman" class="titleCar">{{ lineup4 }}</h1>
         </section>
+        
         <!-- end users section -->
     </main>
 
     <section class="footer">
         <div class="footerDiv"></div>
-        <p>this is a simple footer</p>
+        <section class="footer-nav">
+            <ul>
+                <li class="navFooter-item"><a href="#" >LINEUPS</a></li>
+                <li class="navFooter-item"><a href="#">FEATURED</a></li>
+                <li class="navFooter-item"><a href="#">USED</a></li>
+                <li class="navFooter-item"><a href="#">SHOP</a></li>
+            </ul>
+        </section>
+        <p>C 2020 MINI CANADA.</p>
     </section>
 
     <!-- template files here (these don't render) -->

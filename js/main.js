@@ -55,4 +55,77 @@ import { fetchData } from "./modules/TheDataMiner.js";
     }
         
     fetchData("./includes/index.php").then(data => renderPortfolioThumbnails(data)).catch(err => console.log(err));
+
+
+
+
+    let vue_vm = new Vue({
+
+        data: {
+            lineup1: "3 Door",
+            lineup2: "Clubman",
+            lineup3: "Convertible",
+            lineup4: "Countryman",
+            removeAformat: true,
+            showBioData: false,
+
+            cars: []
+        },
+
+        mounted: function() {
+            console.log("Vue is mounted, trying a fetch for the initial data");
+            
+            fetchData("./includes/index.php")
+                .then(data => {
+                    data.forEach(car => this.cars.push(car));
+                })
+                .catch(err => console.error(err));            
+        },
+
+        updated: function() {console.log('Vue just updated the DOM');},
+
+        methods: {
+            logClicked() {
+                console.log("clicked on a list item");
+            },
+
+            click3Door() {
+                console.log("clicked on the 3 Door car");
+            },
+
+            clickClubman() {
+                console.log("clicked on the Clubman car");
+            },
+
+            clickConvertible() {
+                console.log("clicked on the Convertible car");
+            },
+
+            clickCountryman() {
+                console.log("clicked on the Countryman car");
+            },
+
+            showCarData(target) {
+                console.log('clicked to view car bio data', target, target.name);
+
+                // toggle the property between true and false using a ternary statement
+                this.showBioData = this.showBioData ? false : true;
+
+                // make the selected prof's data visible
+                this.currentProfData = target;
+            },            
+
+            removeCar(target) {
+                // remove this car from the cars array
+                console.log('clicked to remove prof', target, target.name);
+                // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
+
+                // make the selected prof's data visible
+                // this.professors.splice(this.professors.indexOf(target), 1);
+                this.$delete(this.professors, target);
+            }
+        },
+    }).$mount("#app");
+
+
 })();

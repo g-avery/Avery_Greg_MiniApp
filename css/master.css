@@ -25,6 +25,23 @@ body {
   border-radius: 50%;
 }
 
+.heroSection h2 {
+  margin: 70px 0px 30px 0px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+.heroImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleCar {
+  color: white;
+}
+
 nav .nav-item {
   margin: 0px 0px 0px 50px;
   display: inline;
@@ -35,7 +52,7 @@ nav .nav-item a {
   text-decoration: none;
   color: black;
   font-family: Arial;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 nav .nav-item a:hover {
@@ -51,12 +68,14 @@ nav .nav-item a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: white;
-  height: 120px;
+  height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
-  padding: 10px 0px 10px 20px;
+  padding: 5px 20px 5px 30px;
 }
 
 .user-section {
@@ -91,8 +110,6 @@ nav .nav-item a:hover {
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
   background-color: black;
   width: 100%;
   text-align: center;
@@ -101,14 +118,49 @@ nav .nav-item a:hover {
 }
 
 .footerDiv {
-  height: 10px;
-  width: 600px;
+  height: 4px;
+  width: 1600px;
   background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  padding: 30px 0px 0px 0px;
+}
+
+.navFooter-item {
+  margin: 10px 25px 0px 25px;
+  display: inline;
+}
+
+.navFooter-item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-size: 26px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navFooter-item a:hover {
+  color: lightgrey;
 }
 /*# sourceMappingURL=master.css.map */
