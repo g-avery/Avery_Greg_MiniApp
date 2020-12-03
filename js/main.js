@@ -69,6 +69,7 @@ import { fetchData } from "./modules/TheDataMiner.js";
             removeAformat: true,
             showBioData: false,
 
+            // all car data shows up in vue tab, but only the avatar is shown
             cars: []
         },
 
@@ -85,25 +86,12 @@ import { fetchData } from "./modules/TheDataMiner.js";
         updated: function() {console.log('Vue just updated the DOM');},
 
         methods: {
-            logClicked() {
-                console.log("clicked on a list item");
-            },
+            logClicked() {console.log("clicked on a list item");},
 
-            click3Door() {
-                console.log("clicked on the 3 Door car");
-            },
-
-            clickClubman() {
-                console.log("clicked on the Clubman car");
-            },
-
-            clickConvertible() {
-                console.log("clicked on the Convertible car");
-            },
-
-            clickCountryman() {
-                console.log("clicked on the Countryman car");
-            },
+            click3Door() {console.log("clicked on the 3 Door car");},
+            clickClubman() {console.log("clicked on the Clubman car");},
+            clickConvertible() {console.log("clicked on the Convertible car");},
+            clickCountryman() {console.log("clicked on the Countryman car");},
 
             showCarData(target) {
                 console.log('clicked to view car bio data', target, target.name);
@@ -118,7 +106,6 @@ import { fetchData } from "./modules/TheDataMiner.js";
             removeCar(target) {
                 // remove this car from the cars array
                 console.log('clicked to remove prof', target, target.name);
-                // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
 
                 // make the selected prof's data visible
                 // this.professors.splice(this.professors.indexOf(target), 1);
